@@ -1,3 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
 #tree {
   fill: hsl(42, 131, 68);
+}
+
+.eyes-closed,
+.eyes-open,
+.mouth {
+  width: 2.5rem;
+  rotate: z 270deg;
 }
