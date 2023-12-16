@@ -4,8 +4,7 @@
 }
 
 .main-container {
-  height: 100vh;
-  width: 100vw;
+  width: 500px;
 }
 
 #tree {
@@ -13,8 +12,39 @@
 }
 
 .eyes-closed,
-.eyes-open,
+.eyes-opened,
 .mouth {
   width: 2.5rem;
   rotate: z 270deg;
+}
+
+.face-container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.face {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eyes-closed-container {
+  position: absolute;
+  top: 215px;
+}
+
+.eyes-opened-container {
+  align-self: end;
+}
+
+.mouth {
+  align-self: start;
+}
+
+.hidden {
+  display: none;
 }
