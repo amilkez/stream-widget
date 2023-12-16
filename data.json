@@ -1,0 +1,25 @@
+{
+  "treeColor": {
+    "type": "colorpicker",
+    "label": "Tree Color",
+    "value": "hsl(98, 91%, 55%)",
+    "group": "Tree"
+  },
+  "treeShadowColor": {
+    "type": "colorpicker",
+    "label": "Tree Shadow Color",
+    "value": "hsl(98, 91%, 65%)",
+    "group": "Tree"
+  },
+  "trunkColor": {
+    "type": "colorpicker",
+    "label": "Trunk Color",
+    "value": "hsl(98, 91%, 65%)",
+    "group": "Tree"
+  },
+  "font": {
+    "type": "text",
+    "label": "Font",
+    "value": "Mountains of Christmas"
+  }
+}
