@@ -3,6 +3,34 @@
   margin: 0;
 }
 
+/*html {
+  --tree-color: {{treeColor}};
+  --tree-shadow-color: {{treeShadowColor}};
+  --trunk-color: {{trunkColor}};
+  --star-color: {{starColor}};
+  --star-light-color: {{starLightColor}};
+}*/
+
+#tree .leaves {
+  fill: var(--tree-color);
+}
+
+#tree #shadow {
+  fill: var(--tree-shadow-color);
+}
+
+#tree #trunk {
+  fill: var(--trunk-color);
+}
+
+#star * {
+  fill: var(--star-color);
+}
+
+#star .star-light {
+  fill: var(--star-light-color);
+}
+
 .main-container {
   width: 500px;
 }
@@ -32,17 +60,19 @@
   left: 0;
 }
 
-.eyes-closed-container {
-  position: absolute;
-  top: 215px;
-}
-
+.eyes-closed-container,
 .eyes-opened-container {
-  align-self: end;
+  position: absolute;
+  top: 230px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .mouth {
   align-self: start;
+  position: absolute;
+  top: 250px;
 }
 
 .hidden {
