@@ -3,19 +3,25 @@
   margin: 0;
 }
 
-/*html {
-  --tree-color: {{treeColor}};
-  --tree-shadow-color: {{treeShadowColor}};
-  --trunk-color: {{trunkColor}};
-  --star-color: {{starColor}};
-  --star-light-color: {{starLightColor}};
-}*/
+html {
+  --tree-h: 91;
+  --tree-s: 80%;
+  --tree-l: 55%;
+  --tree-color: hsl(var(--tree-h), var(--tree-s), var(--tree-l));
+  --tree-shadow-color: hsl(
+    var(--tree-h),
+    var(--tree-l),
+    calc(var(--tree-l) - 12%)
+  );
+  --trunk-color: hsl(22, 75%, 28%);
+  --star-color: hsl(60, 100%, 50%);
+}
 
 #tree .leaves {
   fill: var(--tree-color);
 }
 
-#tree #shadow {
+#tree #tree-shadow {
   fill: var(--tree-shadow-color);
 }
 
@@ -23,21 +29,15 @@
   fill: var(--trunk-color);
 }
 
-#star * {
+#star {
   fill: var(--star-color);
-}
-
-#star .star-light {
-  fill: var(--star-light-color);
 }
 
 .main-container {
   width: 500px;
 }
 
-#tree {
-  fill: hsl(42, 131, 68);
-}
+/* Face styles */
 
 .eyes-closed,
 .eyes-opened,
@@ -60,12 +60,19 @@
   left: 0;
 }
 
-.eyes-closed-container,
-.eyes-opened-container {
+.eyes-closed-container {
   position: absolute;
   top: 230px;
   width: 150px;
   display: flex;
+  justify-content: space-around;
+}
+
+.eyes-opened-container {
+  position: absolute;
+  display: flex;
+  width: 150px;
+  height: auto;
   justify-content: space-around;
 }
 
@@ -78,3 +85,5 @@
 .hidden {
   display: none;
 }
+
+/* Inputs styling */
